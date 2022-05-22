@@ -15,19 +15,18 @@ public class Statistics
         	stats.max = Float.NaN;
         	stats.average = Float.NaN;
 		return stats;
-    	}
-    	else {
-    	Collections.sort(numbers);  
-    	stats.min = numbers.get(0);
-    	stats.max = numbers.get((numbers.size()-1));
-    	stats.average = calculateAverage(numbers); 
+    	}else {
+    		Collections.sort(numbers);  
+    		stats.min = numbers.get(0);
+    		stats.max = numbers.get((numbers.size()-1));
+    		stats.average = calculateAverage(numbers); 
 		return stats;
     	}
 		
         //implement the computation of statistics here
     }
     private static int calculateAverage(List <Float> numbers) {
-        int sum = 0;
+        float sum = 0;
         for (int i=0; i< numbers.size(); i++) {
               sum += i;
         }
