@@ -15,11 +15,12 @@ public class Statistics
         	stats.max = Float.NaN;
         	stats.average = Float.NaN;
     	}
+    	else {
     	Collections.sort(numbers);  
     	stats.min = numbers.get(0);
     	stats.max = numbers.get((numbers.size()-1));
     	stats.average = calculateAverage(numbers); 
-    	
+    	}
 		return stats;
         //implement the computation of statistics here
     }
