@@ -25,11 +25,11 @@ public class Statistics
 		
         //implement the computation of statistics here
     }
-    private static int calculateAverage(List <Float> numbers) {
+   private static float calculateAverage(List <Float> numbers) {
         float sum = 0;
         for (int i=0; i< numbers.size(); i++) {
-              sum += i;
+              sum += numbers.get(i);
         }
-        return sum / numbers.size();
+        return (float) (sum / numbers.size());
     }
 }
